@@ -1,2 +1,2 @@
 #!/bin/bash
-echo ( $PATH | grep --only-matching ":/" | wc -l + 1)
+echo $((`echo $PATH | grep --only-matching ":/" | wc -l` + 1))
